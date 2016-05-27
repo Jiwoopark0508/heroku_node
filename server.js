@@ -26,7 +26,7 @@ if(env === 'development'){
 		mongoose.connect('mongodb://localhost/multivision');
 }
 else{
-	 mongoose.connect('mongodb://jpark:multivision@ds017553.mlab.com:17553/multivision');
+	 mongoose.connect(' mongodb://heroku_57pmxv05:sfudefleigchkvjv9hia2849af@ds017173.mlab.com:17173/heroku_57pmxv05');
 }
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error...'));
