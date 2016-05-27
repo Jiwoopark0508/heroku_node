@@ -35,8 +35,10 @@ db.on('open', function callback(){
 })
 
 var port = process.env.PORT || 3030;
-app.listen(port);
-console.log('Listening on port ' + port + '...');
+app.listen(port, function(){
+		console.log('Listening on port ' + port + '...');
+});
+
 
 
 var messageSchema = mongoose.Schema(
