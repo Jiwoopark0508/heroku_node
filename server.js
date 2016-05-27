@@ -31,7 +31,7 @@ else{
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error...'));
 db.on('open', function callback(){
-	console.log('opend')
+	console.log('mongodb opend')
 })
 
 var port = process.env.PORT || 3030;
